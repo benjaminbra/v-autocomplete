@@ -61,7 +61,7 @@ export default {
     inputChange () {
       this.showList = true
       this.cursor = -1
-      this.onSelectItem(null, 'inputChange')
+      //this.onSelectItem(null, 'inputChange')
       utils.callUpdateItems(this.searchText, this.updateItems)
       this.$emit('change', this.searchText)
     },

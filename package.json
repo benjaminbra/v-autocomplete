@@ -12,7 +12,7 @@
     "start": "yarn dev",
     "dev": "poi build ./demo/index.js --config ./demo/build.config.js --filename.css paliari-vue.css --no-sourceMap --no-minimize --dist ./docs",
     "release": "rm -rf dist && yarn dist",
-    "demo:open": "open 'http://localhost:5000/'; serve ./docs/"
+    "demo:open": "start http://localhost:5000/ ; serve ./docs/"
   },
   "files": [
     "dist/"
@@ -25,9 +25,10 @@
     "v-autocomplete"
   ],
   "devDependencies": {
+    "open": "0.0.5",
     "poi": "^9.4.3",
     "pug": "^2.0.0-rc.4",
-    "serve": "^7.0.0",
+    "serve": "^7.2.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1"
   }
