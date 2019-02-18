@@ -12,7 +12,8 @@
     "start": "yarn dev",
     "dev": "poi build ./demo/index.js --config ./demo/build.config.js --filename.css paliari-vue.css --no-sourceMap --no-minimize --dist ./docs",
     "release": "rm -rf dist && yarn dist",
-    "demo:open": "start http://localhost:5000/ ; serve ./docs/"
+    "demo:open": "open 'http://localhost:5000/'; serve ./docs/",
+    "demo:start": "start http://localhost:5000/ ; ./node_modules/serve/bin/serve.js ./docs/ -l 5000"
   },
   "files": [
     "dist/"
